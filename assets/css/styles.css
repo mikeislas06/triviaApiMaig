@@ -1,0 +1,104 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../imgs/trivia-banner.jpg");
+}
+
+h1 {
+    color: #fff;
+}
+
+h1,
+h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    padding: 15px;
+}
+
+#scoreContainer {
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-start {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.trivia-card {
+  width: 450px;
+  min-height: 550px;
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: radial-gradient(
+    circle farthest-corner at 16.5% 28.1%,
+    rgba(15, 27, 49, 1) 0%,
+    rgba(0, 112, 218, 1) 90%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #fff;
+}
+
+.q-category {
+  display: flex;
+  align-items: center;
+}
+
+.q-title {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.q-answers {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.option {
+  margin: 20px 0;
+}
+
+label {
+  margin-left: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f52ba;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #fff;
+}
+
+.final-score-card {
+    width: 50%;
+    min-height: 50px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+}
+
+.final-score-card span {
+    font-size: 40px;
+}

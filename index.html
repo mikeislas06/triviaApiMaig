@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="shortcut icon" href="#" />
+
+    <title>Trivia API</title>
+  </head>
+  <body>
+    <h1>Trivia API</h1>
+
+    <div class="container">
+      <div class="input-start">
+        <label for="number">Number of Questions:</label>
+        <input type="number" name="number" id="number" value="10" />
+      </div>
+      <div class="input-start">
+        <label for="category">Select Category</label>
+        <select name="category" id="category">
+          <option value="any">Any Category</option>
+          <option value="9">General Knowledge</option>
+          <option value="10">Entertainment: Books</option>
+          <option value="11">Entertainment: Film</option>
+          <option value="12">Entertainment: Music</option>
+          <option value="13">Entertainment: Musicals &amp; Theatres</option>
+          <option value="14">Entertainment: Television</option>
+          <option value="15">Entertainment: Video Games</option>
+          <option value="16">Entertainment: Board Games</option>
+          <option value="17">Science &amp; Nature</option>
+          <option value="18">Science: Computers</option>
+          <option value="19">Science: Mathematics</option>
+          <option value="20">Mythology</option>
+          <option value="21">Sports</option>
+          <option value="22">Geography</option>
+          <option value="23">History</option>
+          <option value="24">Politics</option>
+          <option value="25">Art</option>
+          <option value="26">Celebrities</option>
+          <option value="27">Animals</option>
+          <option value="28">Vehicles</option>
+          <option value="29">Entertainment: Comics</option>
+          <option value="30">Science: Gadgets</option>
+          <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+          <option value="32">Entertainment: Cartoon &amp; Animations</option>
+        </select>
+      </div>
+      <div class="input-start">
+        <label for="difficulty">Select Difficulty</label>
+        <select name="difficulty" id="difficulty">
+          <option value="any">Any Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="input-start">
+        <label for="type">Select Type</label>
+        <select name="type" id="type">
+          <option value="any">Any Type</option>
+          <option value="multiple">Multiple choice</option>
+          <option value="boolean">True / False</option>
+        </select>
+      </div>
+      <button id="goBtn">Go !</button>
+    </div>
+
+    <div id="scoreContainer">
+        <h4>Score: <span id="score">0</span></h4>
+        <h4>Incorrect Answers: <span id="incorrectAnswers">0</span></h4>
+    </div>
+    <div id="triviaContainer" class="trivia-container"></div>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
